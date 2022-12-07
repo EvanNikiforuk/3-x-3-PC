@@ -2,12 +2,15 @@
 int appWidth, appHeight;
 //
 void setup() {
-  size(displayWidth, displayHeight);
+  fullScreen();
   appWidth = displayWidth;
   appHeight = displayHeight;
+  //
+  population();
 } //End setup
 //
 void draw() {
+  mainGrid();
 } //End draw
 //
 void keyPressed() {

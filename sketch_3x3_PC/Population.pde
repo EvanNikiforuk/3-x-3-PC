@@ -1,4 +1,10 @@
 void population() {
+  //
+  backgroundImageX = appWidth*0;
+  backgroundImageY = appHeight*0;
+  backgroundImageWidth = appWidth-1;
+  backgroundImageHeight = appHeight-1;
+  //
   lineX1 = appWidth * 0/4;
   lineY1 = appHeight * 1.2/4;
   lineWidth1 = appWidth * 4/4;

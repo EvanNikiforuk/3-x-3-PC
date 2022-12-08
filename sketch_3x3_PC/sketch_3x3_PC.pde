@@ -1,5 +1,5 @@
 //Global Variables
-int appWidth, appHeight;
+int appWidth, appHeight, smallerDimension, largerDimension;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic1, pic2, pic3, pic4, pic5;
 //
@@ -8,7 +8,11 @@ void setup() {
   appWidth = displayWidth;
   appHeight = displayHeight;
   //
-  pic1 = loadImage("../Images Used/White-Themed-RTX-3060Ti-PC-Build-Featured-Image-1250x700.jpg");
+  display(); //Display Algorytm will populate smaller and larger dimensions
+  //
+  println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
+  //
+  pic1 = loadImage("../Images Used/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg");
   //
   population();
   //

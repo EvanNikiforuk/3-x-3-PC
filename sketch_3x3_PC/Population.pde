@@ -25,6 +25,21 @@ void population() {
   lineWidth4 = appWidth * 2.7/4;
   lineHeight4 = appHeight * 4/4;
   //
+  startX = appWidth * 1.7/4;
+  startY = appHeight * 1.7/4;
+  startWidth = appWidth * 0.6/4;
+  startHeight = appHeight * 0.5/4;
+  //
+  quitX = appWidth * 1.35/4;
+  quitY = appHeight * 1.37/4;
+  quitWidth = appWidth * 0.3/4;
+  quitHeight = appHeight * 1.25/4;
+  //
+  restartX = appWidth * 2.35/4;
+  restartY = appHeight * 1.37/4;
+  restartWidth = appWidth * 0.3/4;
+  restartHeight = appHeight * 1.25/4;
+  //
 } //End population
 //
 //End Population SubProgram

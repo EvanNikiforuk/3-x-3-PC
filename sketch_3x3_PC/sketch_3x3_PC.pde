@@ -1,7 +1,8 @@
 //Global Variables
-int appWidth, appHeight, smallerDimension, largerDimension;
+int appWidth, appHeight, smallerDimension, largerDimension, fontSize;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic1, pic2, pic3, pic4, pic5;
+PFont titleFont;
 //
 void setup() {
   fullScreen();
@@ -16,18 +17,28 @@ void setup() {
   //
   population();
   //
+  titleFont = createFont("Sitka Text", 55);
+  //
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
 } //End setup
 //
 void draw() {
   image( pic1, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
   mainGrid();
+  //
+  startSquare();
 } //End draw
 //
 void keyPressed() {
 } //End keyPressed
 //
 void mousePressed() {
+  if ( mouseX>quitX && mouseX<quitX+quitWidth && mouseY>quitY && mouseY<quitY+quitHeight ) exit();
+  //
+  if ( mouseX>restartX && mouseX<restartX+restartWidth && mouseY>restartY && mouseY<restartY+restartHeight ) {
+    image( pic1, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
+    mainGrid();
+  }
 } //End keyPressed
 //
 //End Main Program

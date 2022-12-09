@@ -6,10 +6,21 @@ void display() {
   //Output #4: if error with any of above, program will exit or be broken
   //           Hint: "Bru, turn your phun."
   //
-  println("\t\t\tWidth="+width, "\tHeight="+height);
-  println("Display Monitor:", "\twidth:"+displayWidth, "\theight:"+displayHeight);
+  if (appWidth>=appHeight) {
+    largerDimension = appWidth;
+    smallerDimension = appHeight;
+  } else {
+    largerDimension = appHeight;
+    smallerDimension = appWidth;
+  }
   //
-  String ls="Landscape or Square", p="portrait", DO="Display Orientation", instruct="Bru, turn your phun";
+   println("CANVAS:", "Width:"+width, "Height="+height);
+  println("Display Monitor:", "Width:"+displayWidth, "Height:"+displayHeight);
+  //
+  String ls="Landscape or Square", p="portrait", DO="Display Orientation:", instruct="Bru, turn your phun";
+  String orientation = ( appWidth >= appHeight ) ? ls : p ;
+  println(DO, orientation);
+  if (orientation == p ) println(instruct);
   //
   if ( appWidth < appHeight ) { //Declaring Landscape & square
     println(instruct);
@@ -23,6 +34,8 @@ void display() {
       //Empty ELSE
     }
   }
+  println("Smaller Dimension:", smallerDimension);
+  println("Larger Dimension:", largerDimension);
 }//End display
 //
 //End Display And Orientation SubProgram

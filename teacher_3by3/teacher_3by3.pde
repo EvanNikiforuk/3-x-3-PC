@@ -3,9 +3,12 @@ int appWidth, appHeight, smallerDimension, largerDimension;
 Boolean OS_on=false, splashScreenStart=false;
 color red = #FF0000, resetDefaultInk = #000000, white=#FFFFFF;
 void setup() {
-  size(800, 600);
-  appWidth = width;
-  appHeight = height;
+  //size(800, 600);
+  //appWidth = width;
+  //appHeight = height;
+  fullScreen();
+  appWidth = displayWidth;
+  appHeight = displayHeight;
   //
   display();
   //
@@ -33,6 +36,14 @@ void keyPressed() {
 void mousePressed() {
   //OS Level Mouse Click 
   if (OS_on==false) OS_on=true;//End OS Level Mouse Click
+  //
+  if ( OS_on==true && splashScreenStart==true && mouseX>quitX && mouseX<quitX+quitWidth && mouseY>quitY && mouseY<quitY+quitHeight ) exit();
+  //
+  if ( mouseX>restartX && mouseX<restartX+restartWidth && mouseY>restartY && mouseY<restartY+restartHeight ) {
+    image( backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+    mainGrid();
+  }
+  //
 } //End keyPressed
 //
 //End Main Program

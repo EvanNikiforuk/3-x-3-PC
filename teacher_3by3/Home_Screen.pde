@@ -1,12 +1,22 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 int tintDayMode=255, tintDayModeOpacity=100;
 int tintRed=65, tintGreen=65, tintBlue=0, tintNightModeOpacity=100;
+float startButtonX, startButtonY, startButtonWidth, startButtonHeight;
+float quitX, quitY, quitWidth, quitHeight;
+float restartX, restartY, restartWidth, restartHeight;
 void homeScreen() {
   println("Now at Home Screen"); //Testing for splash screen start button
+  //
+  mainGrid();
+  //
+  startSquare();
+  //
+  square1();
+  //
   /* home screen
-   -background image tint()
-   -grid
-   -quit button, reset button
+   -background image tint() done
+   -grid done
+   -quit button, reset button done
    -in each: image, text, shape, button
    - narrative
    -see case study
@@ -14,6 +24,19 @@ void homeScreen() {
    */
   //
 }//End hoeScreen
+//
+void startSquare() {
+  fill(S);
+  rect(startButtonX, startButtonY, startButtonWidth, startButtonHeight);
+  fill(Q);
+  rect(quitX, quitY, quitWidth, quitHeight);
+  fill(R);
+  rect(restartX, restartY, restartWidth, restartHeight);
+  fill(resetDefaultInk);
+  //
+  startSquareHoverOver();
+  startSquareText();
+}//End startSquare
 //
 void backgroundWhiteScreen() {
   fill(white);

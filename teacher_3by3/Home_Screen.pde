@@ -11,7 +11,7 @@ void homeScreen() {
   //
   startSquare();
   //
-  square1();
+  //square1();
   //
   /* home screen
    -background image tint() done
@@ -34,7 +34,7 @@ void startSquare() {
   rect(restartX, restartY, restartWidth, restartHeight);
   fill(resetDefaultInk);
   //
-  startSquareHoverOver();
+  hoverOver();
   startSquareText();
 }//End startSquare
 //

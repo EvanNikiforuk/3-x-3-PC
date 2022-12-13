@@ -45,10 +45,10 @@ void population() {
   restartWidth = appWidth * 0.3/4;
   restartHeight = appHeight * 1.25/4;
   //
-  squareIage1X = appWidth * 0;
-  squareIage1Y = appHeight *0;
-  squareIage1Width = appWidth * 1.3/4;
-  squareIage1Height = appHeight * 1.3/4;
+  squareImage1X = appWidth * 0;
+  squareImage1Y = appHeight *0;
+  squareImage1Width = appWidth * 1.3/4;
+  squareImage1Height = appHeight * 1.3/4;
   //
   Next1X = appWidth * 0/4;
   Next1Y = appHeight * 0/4;

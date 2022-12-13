@@ -40,10 +40,13 @@ void mousePressed() {
   if ( OS_on==true && splashScreenStart==true && mouseX>quitX && mouseX<quitX+quitWidth && mouseY>quitY && mouseY<quitY+quitHeight ) exit();
   //
   if ( mouseX>restartX && mouseX<restartX+restartWidth && mouseY>restartY && mouseY<restartY+restartHeight ) {
-    image( backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+    backgroundImage();
     mainGrid();
   }
   //
+  if ( OS_on==true && splashScreenStart==true && mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) {
+    square1();
+  }
 } //End keyPressed
 //
 //End Main Program

@@ -1,5 +1,5 @@
 color S, Q, R, N1, black=#000000, yellow=#FAFA00;
-void startSquareHoverOver() {
+void hoverOver() {
   if ( mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) {
     S = yellow; //Remember Knight Mode
     //HINT logical rect: QuitButtonWorks-Boolean TRUE, here

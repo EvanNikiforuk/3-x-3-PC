@@ -54,6 +54,26 @@ void population() {
   Next1Y = appHeight * 0/4;
   Next1Width = appWidth * 0.5/4;
   Next1Height = appHeight * 0.25/4;
+  //
+  CPUX = appWidth * 0.35/4;
+  CPUY = appHeight * 0.5/4;
+  CPUWidth = appWidth * 0.5/4;
+  CPUHeight = appHeight * 0.25/4;
+  //
+  squareImage2X = appWidth * 1.3/4;
+  squareImage2Y = appHeight *0;
+  squareImage2Width = appWidth * 1.4/4;
+  squareImage2Height = appHeight * 1.3/4;
+  //
+  Next2X = appWidth * 1.7/4;
+  Next2Y = appHeight * 0/4;
+  Next2Width = appWidth * 0.5/4;
+  Next2Height = appHeight * 0.25/4;
+  //
+  CPUCoolerX = appWidth * 1.7/4;
+  CPUCoolerY = appHeight * 0.5/4;
+  CPUCoolerWidth = appWidth * 0.5/4;
+  CPUCoolerHeight = appHeight * 0.25/4;
 }//End population
 //
 //End Population Subprogram

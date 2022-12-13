@@ -47,6 +47,10 @@ void mousePressed() {
   if ( OS_on==true && splashScreenStart==true && mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) {
     square1();
   }
+  //
+  if ( OS_on==true && splashScreenStart==true && mouseX>Next1X && mouseX<Next1X+Next1Width && mouseY>Next1Y && mouseY<Next1Y+Next1Height ) {
+    square2();
+  }
 } //End keyPressed
 //
 //End Main Program

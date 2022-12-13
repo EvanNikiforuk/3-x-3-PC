@@ -1,6 +1,6 @@
 String spaceBar = "Press the SPACE BAR to continue";
 String Start = "START!", Restart = "RESTART!", Quit = "EXIT!";
-String next1Text ="NEXT!";
+String nextText ="NEXT!", cpuText = "CPU", cpuCoolerText = "CPU COOLER";
 PFont font;
 int size=25;
 void textSetup() {
@@ -40,9 +40,30 @@ void startSquareText() {
 void square1Text() {
   fill(red);
   textFont(font, size);
-  text(next1Text, Next1X, Next1Y, Next1Width, Next1Height);
+  text(nextText, Next1X, Next1Y, Next1Width, Next1Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(50);
+  text(cpuText, CPUX, CPUY, CPUWidth, CPUHeight);
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
 }//End square1Text
 //
+void square2Text() {
+  fill(red);
+  textFont(font, size);
+  text(nextText, Next2X, Next2Y, Next2Width, Next2Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(35);
+  text(cpuCoolerText, CPUCoolerX, CPUCoolerY, CPUCoolerWidth, CPUCoolerHeight);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+}//End square2Text
 //End Text SubProgram

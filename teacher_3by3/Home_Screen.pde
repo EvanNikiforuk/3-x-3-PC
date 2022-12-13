@@ -13,6 +13,8 @@ void homeScreen() {
   //
   //square1();
   //
+  //square2();
+  //
   /* home screen
    -background image tint() done
    -grid done

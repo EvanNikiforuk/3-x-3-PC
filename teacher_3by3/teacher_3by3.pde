@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
-Boolean OS_on=false, splashScreenStart=false;
+Boolean OS_on=false, splashScreenStart=false, nightMode=false;
 color red = #FF0000, resetDefaultInk = #000000, white=#FFFFFF;
 void setup() {
   //size(800, 600);
@@ -30,6 +30,19 @@ void keyPressed() {
   if ( OS_on==true && key==' ' ) { 
     splashScreenStart=true;
     backgroundImage();
+  }
+  //
+  //Key Board Short Cuts
+  if ( key==CODED && keyCode==ESC ) exit();
+  if ( key=='Q' || key=='q' ) exit();
+  if ( key=='N' || key=='n' ) {
+    if ( nightMode==true ) { 
+      nightMode=false;
+      backgroundImage();
+    } else { 
+      nightMode=true;
+      backgroundImage();
+    }
   }
 } //End keyPressed
 //

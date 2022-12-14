@@ -4,18 +4,8 @@ int tintRed=65, tintGreen=65, tintBlue=0, tintNightModeOpacity=100;
 float startButtonX, startButtonY, startButtonWidth, startButtonHeight;
 float quitX, quitY, quitWidth, quitHeight;
 float restartX, restartY, restartWidth, restartHeight;
-void homeScreen() {
-  println("Now at Home Screen"); //Testing for splash screen start button
-  //
-  mainGrid();
-  //
-  startSquare();
-  //
-  //square1();
-  //
-  //square2();
-  //
-  /* home screen
+//
+/* home screen
    -background image tint() done
    -grid done
    -quit button, reset button done
@@ -24,6 +14,19 @@ void homeScreen() {
    -see case study
    - one image aspect ratio
    */
+   //
+void homeScreen() {
+  println("Now at Home Screen"); //Testing for splash screen start button
+  //
+  mainGrid();
+  //
+  startSquare();
+  //
+  square1();
+  //
+  //square2();
+  //
+  
   //
 }//End hoeScreen
 //
@@ -50,8 +53,8 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  tint(tintDayMode, tintDayModeOpacity);//Day mode, see ternary operator
-  tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);//Night mode, see ternary operator
+  if ( nightMode==false ) tint(tintDayMode, tintDayModeOpacity);//Day mode, see ternary operator
+  if ( nightMode==true ) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);//Night mode, see ternary operator
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
 }//End backgroundImage
 //

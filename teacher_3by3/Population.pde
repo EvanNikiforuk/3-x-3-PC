@@ -89,6 +89,51 @@ void population() {
   motherBoardY = appHeight * 0.5/4;
   motherBoardWidth = appWidth * 0.5/4;
   motherBoardHeight = appHeight * 0.25/4;
+  //
+  squareImage4X = appWidth * 2.7/4;
+  squareImage4Y = appHeight *1.3/4;
+  squareImage4Width = appWidth * 1.3/4;
+  squareImage4Height = appHeight * 1.4/4;
+  //
+  Next4X = appWidth * 3.5/4;
+  Next4Y = appHeight * 1.9/4;
+  Next4Width = appWidth * 0.5/4;
+  Next4Height = appHeight * 0.25/4;
+  //
+  ramX = appWidth * 3.1/4;
+  ramY = appHeight * 1.4/4;
+  ramWidth = appWidth * 0.5/4;
+  ramHeight = appHeight * 0.25/4;
+  //
+  squareImage5X = appWidth * 2.7/4;
+  squareImage5Y = appHeight *2.7/4;
+  squareImage5Width = appWidth * 1.3/4;
+  squareImage5Height = appHeight * 1.4/4;
+  //
+  Next5X = appWidth * 3.5/4;
+  Next5Y = appHeight * 3.75/4;
+  Next5Width = appWidth * 0.5/4;
+  Next5Height = appHeight * 0.25/4;
+  //
+  storageX = appWidth * 3.1/4;
+  storageY = appHeight * 2.9/4;
+  storageWidth = appWidth * 0.5/4;
+  storageHeight = appHeight * 0.25/4;
+  //
+  squareImage6X = appWidth * 1.3/4;
+  squareImage6Y = appHeight *2.7/4;
+  squareImage6Width = appWidth * 1.4/4;
+  squareImage6Height = appHeight * 1.4/4;
+  //
+  Next6X = appWidth * 1.7/4;
+  Next6Y = appHeight * 3.75/4;
+  Next6Width = appWidth * 0.5/4;
+  Next6Height = appHeight * 0.25/4;
+  //
+  gpuX = appWidth * 1.7/4;
+  gpuY = appHeight * 2.9/4;
+  gpuWidth = appWidth * 0.5/4;
+  gpuHeight = appHeight * 0.25/4;
 }//End population
 //
 //End Population Subprogram

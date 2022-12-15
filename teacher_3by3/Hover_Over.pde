@@ -1,4 +1,4 @@
-color S, Q, R, N1, N2, N3, black=#000000, yellow=#FAFA00;
+color S, Q, R, N1, N2, N3, N4, N5, N6, black=#000000, yellow=#FAFA00;
 void hoverOver() {
   if ( mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) {
     S = yellow; //Remember Knight Mode
@@ -40,5 +40,26 @@ void hoverOver() {
     //HINT logical rect: QuitButtonWorks-Boolean TRUE, here
   } else {
     N3 = black; //Remember Day Mode
+  }
+  //
+  if ( mouseX>Next4X && mouseX<Next4X+Next4Width && mouseY>Next4Y && mouseY<Next4Y+Next4Height ) {
+    N4 = yellow; //Remember Knight Mode
+    //HINT logical rect: QuitButtonWorks-Boolean TRUE, here
+  } else {
+    N4 = black; //Remember Day Mode
+  }
+  //
+  if ( mouseX>Next5X && mouseX<Next5X+Next5Width && mouseY>Next5Y && mouseY<Next5Y+Next5Height ) {
+    N5 = yellow; //Remember Knight Mode
+    //HINT logical rect: QuitButtonWorks-Boolean TRUE, here
+  } else {
+    N5 = black; //Remember Day Mode
+  }
+  //
+  if ( mouseX>Next6X && mouseX<Next6X+Next6Width && mouseY>Next6Y && mouseY<Next6Y+Next6Height ) {
+    N6 = yellow; //Remember Knight Mode
+    //HINT logical rect: QuitButtonWorks-Boolean TRUE, here
+  } else {
+    N6 = black; //Remember Day Mode
   }
 }//End startSquareHoverOver

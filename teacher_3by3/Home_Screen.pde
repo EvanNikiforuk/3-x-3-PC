@@ -34,6 +34,18 @@ void homeScreen() {
     square3();
   }
   //
+  if (square4==true) {
+    square4();
+  }
+  //
+  if (square5==true) {
+    square5();
+  }
+  //
+  if (square6==true) {
+    square6();
+  }
+  //
 }//End hoeScreen
 //
 void startSquare() {

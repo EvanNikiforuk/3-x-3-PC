@@ -1,6 +1,6 @@
 String spaceBar = "Press the SPACE BAR to continue";
 String Start = "START!", Restart = "RESTART!", Quit = "EXIT!";
-String nextText ="NEXT!", cpuText = "CPU", cpuCoolerText = "CPU COOLER", motherBoardText = "MOTHERBOARD";
+String nextText ="NEXT!", cpuText = "CPU", cpuCoolerText = "CPU COOLER", motherBoardText = "MOTHERBOARD", ramText = "RAM", storageText = "STORAGE", gpuText = "GPU";
 PFont font;
 int size=25;
 void textSetup() {
@@ -80,5 +80,50 @@ void square3Text() {
   text(motherBoardText, motherBoardX, motherBoardY, motherBoardWidth, motherBoardHeight);
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-}//End square2Text
+}//End square3Text
+//
+void square4Text() {
+  fill(red);
+  textFont(font, size);
+  text(nextText, Next4X, Next4Y, Next4Width, Next4Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(65);
+  text(ramText, ramX, ramY, ramWidth, ramHeight);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+}//End square4Text
+//
+void square5Text() {
+  fill(red);
+  textFont(font, size);
+  text(nextText, Next5X, Next5Y, Next5Width, Next5Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(50);
+  text(storageText, storageX, storageY, storageWidth, storageHeight);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+}//End square5Text
+//
+void square6Text() {
+  fill(red);
+  textFont(font, size);
+  text(nextText, Next6X, Next6Y, Next6Width, Next6Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(65);
+  text(gpuText, gpuX, gpuY, gpuWidth, gpuHeight);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+}//End square6Text
 //End Text SubProgram

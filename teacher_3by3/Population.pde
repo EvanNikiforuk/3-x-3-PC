@@ -74,6 +74,21 @@ void population() {
   CPUCoolerY = appHeight * 0.5/4;
   CPUCoolerWidth = appWidth * 0.5/4;
   CPUCoolerHeight = appHeight * 0.25/4;
+  //
+  squareImage3X = appWidth * 2.7/4;
+  squareImage3Y = appHeight *0;
+  squareImage3Width = appWidth * 1.3/4;
+  squareImage3Height = appHeight * 1.3/4;
+  //
+  Next3X = appWidth * 3.5/4;
+  Next3Y = appHeight * 0/4;
+  Next3Width = appWidth * 0.5/4;
+  Next3Height = appHeight * 0.25/4;
+  //
+  motherBoardX = appWidth * 3.1/4;
+  motherBoardY = appHeight * 0.5/4;
+  motherBoardWidth = appWidth * 0.5/4;
+  motherBoardHeight = appHeight * 0.25/4;
 }//End population
 //
 //End Population Subprogram

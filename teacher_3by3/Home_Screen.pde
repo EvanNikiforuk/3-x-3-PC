@@ -22,11 +22,17 @@ void homeScreen() {
   //
   startSquare();
   //
-  square1();
+  if (square1==true) {
+    square1();
+  }
   //
-  //square2();
+  if (square2==true) {
+    square2();
+  }
   //
-  
+  if (square3==true) {
+    square3();
+  }
   //
 }//End hoeScreen
 //

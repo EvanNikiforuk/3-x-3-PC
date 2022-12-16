@@ -134,6 +134,37 @@ void population() {
   gpuY = appHeight * 2.9/4;
   gpuWidth = appWidth * 0.5/4;
   gpuHeight = appHeight * 0.25/4;
+  //
+  squareImage7X = appWidth * 0/4;
+  squareImage7Y = appHeight *2.7/4;
+  squareImage7Width = appWidth * 1.3/4;
+  squareImage7Height = appHeight * 1.4/4;
+  //
+  Next7X = appWidth * 0/4;
+  Next7Y = appHeight * 3.75/4;
+  Next7Width = appWidth * 0.5/4;
+  Next7Height = appHeight * 0.25/4;
+  //
+  powerSupplyX = appWidth * 0.4/4;
+  powerSupplyY = appHeight * 2.9/4;
+  powerSupplyWidth = appWidth * 0.5/4;
+  powerSupplyHeight = appHeight * 0.25/4;
+  //
+  squareImage8X = appWidth * 0/4;
+  squareImage8Y = appHeight *1.3/4;
+  squareImage8Width = appWidth * 1.3/4;
+  squareImage8Height = appHeight * 1.4/4;
+  //
+  Next8X = appWidth * 0/4;
+  Next8Y = appHeight * 1.85/4;
+  Next8Width = appWidth * 0.5/4;
+  Next8Height = appHeight * 0.25/4;
+  //
+  caseX = appWidth * 0.4/4;
+  caseY = appHeight * 1.5/4;
+  caseWidth = appWidth * 0.5/4;
+  caseHeight = appHeight * 0.25/4;
+  //
 }//End population
 //
 //End Population Subprogram

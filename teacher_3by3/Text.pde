@@ -1,6 +1,6 @@
 String spaceBar = "Press the SPACE BAR to continue";
 String Start = "START!", Restart = "RESTART!", Quit = "EXIT!";
-String nextText ="NEXT!", cpuText = "CPU", cpuCoolerText = "CPU COOLER", motherBoardText = "MOTHERBOARD", ramText = "RAM", storageText = "STORAGE", gpuText = "GPU";
+String nextText ="NEXT!", cpuText = "CPU", cpuCoolerText = "CPU COOLER", motherBoardText = "MOTHERBOARD", ramText = "RAM", storageText = "STORAGE", gpuText = "GPU", powerSupplyText = "POWER SUPPLY", caseText = "CASE";
 PFont font;
 int size=25;
 void textSetup() {
@@ -126,4 +126,34 @@ void square6Text() {
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
 }//End square6Text
+//
+void square7Text() {
+  fill(red);
+  textFont(font, size);
+  text(nextText, Next7X, Next7Y, Next7Width, Next7Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(30);
+  text(powerSupplyText, powerSupplyX, powerSupplyY, powerSupplyWidth, powerSupplyHeight);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+}//End square7Text
+//
+void square8Text() {
+  fill(red);
+  textFont(font, size);
+  text(nextText, Next8X, Next8Y, Next8Width, Next8Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(30);
+  text(caseText, caseX, caseY, caseWidth, caseHeight);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+}//End square8Text
 //End Text SubProgram

@@ -16,7 +16,7 @@ float restartX, restartY, restartWidth, restartHeight;
    */
    //
 void homeScreen() {
-  println("Now at Home Screen"); //Testing for splash screen start button
+  //println("Now at Home Screen"); //Testing for splash screen start button
   //
   mainGrid();
   //
@@ -46,6 +46,12 @@ void homeScreen() {
     square6();
   }
   //
+  if (square7==true) {
+    square7();
+  }
+  //
+  square8();
+  //
 }//End hoeScreen
 //
 void startSquare() {
@@ -71,8 +77,7 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  if ( nightMode==false ) tint(tintDayMode, tintDayModeOpacity);//Day mode, see ternary operator
-  if ( nightMode==true ) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);//Night mode, see ternary operator
+  imageNightMode();
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
 }//End backgroundImage
 //

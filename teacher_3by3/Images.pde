@@ -1,4 +1,4 @@
-PImage backgroundImage, image1, image2, image3, image4, image5, image6, image7, image8;
+PImage backgroundImage, image1, image2, image3, image4, image5, image6, image7, image8, image9;
 //
 void imagesPopulation() {
   backgroundImage = loadImage("../Images Used/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg");
@@ -17,7 +17,9 @@ void imagesPopulation() {
   //
   image7 = loadImage("../Images Used/17-139-271-V01.jpg");
   //
-  image8 = loadImage("../Images Used/");
+  image8 = loadImage("../Images Used/ukzGvTuZDVKbwyQEAXrvyV.jpg");
+  //
+  image9 = loadImage("../Images Used/White-Themed-RTX-3060Ti-PC-Build-Featured-Image-1250x700.jpg");
 }//End imagePopulation
 //
 void imageNightMode() {

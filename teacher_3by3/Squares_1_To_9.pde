@@ -6,6 +6,7 @@ float squareImage5X, squareImage5Y, squareImage5Width, squareImage5Height;
 float squareImage6X, squareImage6Y, squareImage6Width, squareImage6Height;
 float squareImage7X, squareImage7Y, squareImage7Width, squareImage7Height;
 float squareImage8X, squareImage8Y, squareImage8Width, squareImage8Height;
+float endScreenX, endScreenY, endScreenWidth, endScreenHeight;
 float Next1X, Next1Y, Next1Width, Next1Height;
 float Next2X, Next2Y, Next2Width, Next2Height;
 float Next3X, Next3Y, Next3Width, Next3Height;
@@ -13,7 +14,7 @@ float Next4X, Next4Y, Next4Width, Next4Height;
 float Next5X, Next5Y, Next5Width, Next5Height;
 float Next6X, Next6Y, Next6Width, Next6Height;
 float Next7X, Next7Y, Next7Width, Next7Height;
-float Next8X, Next8Y, Next8Width, Next8Height;
+float DoneX, DoneY, DoneWidth, DoneHeight;
 float CPUX, CPUY, CPUWidth, CPUHeight;
 float CPUCoolerX, CPUCoolerY, CPUCoolerWidth, CPUCoolerHeight;
 float motherBoardX, motherBoardY, motherBoardWidth, motherBoardHeight;
@@ -22,6 +23,9 @@ float storageX, storageY, storageWidth, storageHeight;
 float gpuX, gpuY, gpuWidth, gpuHeight;
 float powerSupplyX, powerSupplyY, powerSupplyWidth, powerSupplyHeight;
 float caseX, caseY, caseWidth, caseHeight;
+float doneX, doneY, doneWidth, doneHeight;
+float exitButton2X, exitButton2Y, exitButton2Width, exitButton2Height;
+float restartButton2X, restartButton2Y, restartButton2Width, restartButton2Height;
 void square1() {
   imagesPopulation();
   fill(255);
@@ -150,7 +154,7 @@ void square8() {
   imageNightMode();
   image(image8, squareImage8X, squareImage8Y, squareImage8Width, squareImage8Height);
   fill(N8);
-  rect(Next8X, Next8Y, Next8Width, Next8Height);
+  rect(DoneX, DoneY, DoneWidth, DoneHeight);
   //fill(255);
   //rect(caseX, caseY, caseWidth, caseHeight);
   //
@@ -158,3 +162,15 @@ void square8() {
   //
   square8Text();
 }//End square8
+//
+void endScreen() {
+  imagesPopulation();
+  fill(255);
+  rect(endScreenX, endScreenY, endScreenWidth, endScreenHeight);
+  tint(255, 255);
+  imageNightMode();
+  image(image9, endScreenX, endScreenY, endScreenWidth, endScreenHeight);
+  rect(exitButton2X, exitButton2Y, exitButton2Width, exitButton2Height);
+  rect(restartButton2X, restartButton2Y, restartButton2Width, restartButton2Height);
+  endScreenText();
+}//End endScreen

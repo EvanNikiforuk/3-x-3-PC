@@ -1,7 +1,8 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
-Boolean OS_on=false, splashScreenStart=false, nightMode=false, square1=false, square2=false, square3=false, square4=false, square5=false, square6=false, square7=false;
+Boolean OS_on=false, splashScreenStart=false, nightMode=false, square1=false, square2=false, square3=false, square4=false, square5=false, square6=false, square7=false, square8=false, endScreen=false;
 color red = #FF0000, resetDefaultInk = #000000, white=#FFFFFF;
+Boolean restart=true, exit=true;
 void setup() {
   //size(800, 600);
   //appWidth = width;
@@ -52,19 +53,23 @@ void mousePressed() {
   //OS Level Mouse Click 
   if (OS_on==false) OS_on=true;//End OS Level Mouse Click
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>quitX && mouseX<quitX+quitWidth && mouseY>quitY && mouseY<quitY+quitHeight ) exit();
+  if (exit==true) {
+    if ( OS_on==true && splashScreenStart==true && mouseX>quitX && mouseX<quitX+quitWidth && mouseY>quitY && mouseY<quitY+quitHeight ) exit();
+  }
   //
-  if ( mouseX>restartX && mouseX<restartX+restartWidth && mouseY>restartY && mouseY<restartY+restartHeight ) {
-    square1=false;
-    square2=false;
-    square3=false;
-    square4=false;
-    square5=false;
-    square6=false;
-    square7=false;
-    //square8=false;
-    backgroundImage();
-    mainGrid();
+  if (restart==true) {
+    if ( mouseX>restartX && mouseX<restartX+restartWidth && mouseY>restartY && mouseY<restartY+restartHeight ) {
+      square1=false;
+      square2=false;
+      square3=false;
+      square4=false;
+      square5=false;
+      square6=false;
+      square7=false;
+      square8=false;
+      backgroundImage();
+      mainGrid();
+    }
   }
   //
   if ( OS_on==true && splashScreenStart==true && mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) {
@@ -100,6 +105,18 @@ void mousePressed() {
   if ( OS_on==true && splashScreenStart==true && mouseX>Next6X && mouseX<Next6X+Next6Width && mouseY>Next6Y && mouseY<Next6Y+Next6Height ) {
     square7=true;
     square7();
+  }
+  //
+  if ( OS_on==true && splashScreenStart==true && mouseX>Next7X && mouseX<Next7X+Next7Width && mouseY>Next7Y && mouseY<Next7Y+Next7Height ) {
+    square8=true;
+    square8();
+  }
+  //
+  if ( OS_on==true && splashScreenStart==true && mouseX>DoneX && mouseX<DoneX+DoneWidth && mouseY>DoneY && mouseY<DoneY+DoneHeight ) {
+    endScreen=true;
+    restart=false;
+    exit=false;
+    endScreen();
   }
 } //End keyPressed
 //

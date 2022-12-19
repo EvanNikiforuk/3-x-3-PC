@@ -155,16 +155,35 @@ void population() {
   squareImage8Width = appWidth * 1.3/4;
   squareImage8Height = appHeight * 1.4/4;
   //
-  Next8X = appWidth * 0/4;
-  Next8Y = appHeight * 1.85/4;
-  Next8Width = appWidth * 0.5/4;
-  Next8Height = appHeight * 0.25/4;
+  DoneX = appWidth * 0/4;
+  DoneY = appHeight * 1.85/4;
+  DoneWidth = appWidth * 0.5/4;
+  DoneHeight = appHeight * 0.25/4;
   //
   caseX = appWidth * 0.4/4;
   caseY = appHeight * 1.5/4;
   caseWidth = appWidth * 0.5/4;
   caseHeight = appHeight * 0.25/4;
   //
+  endScreenX = appWidth * 0;
+  endScreenY = appHeight *0;
+  endScreenWidth = appWidth;
+  endScreenHeight = appHeight;
+  //
+  doneX = appWidth * 1/4;
+  doneY = appHeight * 0.5/4;
+  doneWidth = appWidth * 2/4;
+  doneHeight = appHeight * 0.5/4;
+  //
+  exitButton2X = appWidth * 0;
+  exitButton2Y = appHeight * 3.5/4;
+  exitButton2Width = appWidth * 0.5/4;
+  exitButton2Height = appHeight * 0.5/4;
+  //
+  restartButton2X = appWidth * 3.5/4;
+  restartButton2Y = appHeight * 3.5/4;
+  restartButton2Width = appWidth * 0.5/4;
+  restartButton2Height = appHeight * 0.5/4;
 }//End population
 //
 //End Population Subprogram

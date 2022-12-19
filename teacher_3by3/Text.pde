@@ -1,6 +1,6 @@
 String spaceBar = "Press the SPACE BAR to continue";
 String Start = "START!", Restart = "RESTART!", Quit = "EXIT!";
-String nextText ="NEXT!", cpuText = "CPU", cpuCoolerText = "CPU COOLER", motherBoardText = "MOTHERBOARD", ramText = "RAM", storageText = "STORAGE", gpuText = "GPU", powerSupplyText = "POWER SUPPLY", caseText = "CASE";
+String nextText ="NEXT!", DoneText = "DONE", cpuText = "CPU", cpuCoolerText = "CPU COOLER", motherBoardText = "MOTHERBOARD", ramText = "RAM", storageText = "STORAGE", gpuText = "GPU", powerSupplyText = "POWER SUPPLY", caseText = "CASE", doneText = "DONE!!!", exit2Text = "EXIT", restart2Text = "RESTART";
 PFont font;
 int size=25;
 void textSetup() {
@@ -145,7 +145,7 @@ void square7Text() {
 void square8Text() {
   fill(red);
   textFont(font, size);
-  text(nextText, Next8X, Next8Y, Next8Width, Next8Height);
+  text(DoneText, DoneX, DoneY, DoneWidth, DoneHeight);
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   //
@@ -156,4 +156,27 @@ void square8Text() {
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
 }//End square8Text
+//
+void endScreenText() {
+  fill(red);
+  //textFont(font, size);
+  textSize(125);
+  text(doneText, doneX, doneY, doneWidth, doneHeight);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(50);
+  text(exit2Text, exitButton2X, exitButton2Y, exitButton2Width, exitButton2Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //
+  fill(red);
+  //textFont(font, size);
+  textSize(30);
+  text(restart2Text, restartButton2X, restartButton2Y, restartButton2Width, restartButton2Height);
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+}//End endScreenText
 //End Text SubProgram

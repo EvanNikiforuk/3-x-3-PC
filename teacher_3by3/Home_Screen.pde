@@ -50,7 +50,13 @@ void homeScreen() {
     square7();
   }
   //
-  square8();
+  if (square8==true) {
+    square8();
+  }
+  //
+  if (endScreen==true) {
+    endScreen();
+  }
   //
 }//End hoeScreen
 //

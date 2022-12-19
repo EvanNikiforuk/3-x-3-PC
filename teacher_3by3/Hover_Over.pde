@@ -70,7 +70,7 @@ void hoverOver() {
     N7 = black; //Remember Day Mode
   }
   //
-  if ( mouseX>Next8X && mouseX<Next8X+Next8Width && mouseY>Next8Y && mouseY<Next8Y+Next8Height ) {
+  if ( mouseX>DoneX && mouseX<DoneX+DoneWidth && mouseY>DoneY && mouseY<DoneY+DoneHeight ) {
     N8 = yellow; //Remember Knight Mode
     //HINT logical rect: QuitButtonWorks-Boolean TRUE, here
   } else {

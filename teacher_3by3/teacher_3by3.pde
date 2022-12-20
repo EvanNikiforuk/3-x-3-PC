@@ -2,7 +2,7 @@
 int appWidth, appHeight, smallerDimension, largerDimension;
 Boolean OS_on=false, splashScreenStart=false, nightMode=false, square1=false, square2=false, square3=false, square4=false, square5=false, square6=false, square7=false, square8=false, endScreen=false;
 color red = #FF0000, resetDefaultInk = #000000, white=#FFFFFF;
-Boolean restart=true, exit=true;
+Boolean restart=true, exit=true, exit2=true;
 void setup() {
   //size(800, 600);
   //appWidth = width;
@@ -107,15 +107,25 @@ void mousePressed() {
     square7();
   }
   //
+
   if ( OS_on==true && splashScreenStart==true && mouseX>Next7X && mouseX<Next7X+Next7Width && mouseY>Next7Y && mouseY<Next7Y+Next7Height ) {
     square8=true;
     square8();
   }
+
   //
   if ( OS_on==true && splashScreenStart==true && mouseX>DoneX && mouseX<DoneX+DoneWidth && mouseY>DoneY && mouseY<DoneY+DoneHeight ) {
     endScreen=true;
     restart=false;
     exit=false;
+    square1=false;
+    square2=false;
+    square3=false;
+    square4=false;
+    square5=false;
+    square6=false;
+    square7=false;
+    square8=false;
     endScreen();
   }
 } //End keyPressed

@@ -73,49 +73,49 @@ void mousePressed() {
     }
   }
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) {
     square1=true;
     square1();
   }
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>Next1X && mouseX<Next1X+Next1Width && mouseY>Next1Y && mouseY<Next1Y+Next1Height ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>Next1X && mouseX<Next1X+Next1Width && mouseY>Next1Y && mouseY<Next1Y+Next1Height ) {
     square2=true;
     square2();
   }
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>Next2X && mouseX<Next2X+Next2Width && mouseY>Next2Y && mouseY<Next2Y+Next2Height ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>Next2X && mouseX<Next2X+Next2Width && mouseY>Next2Y && mouseY<Next2Y+Next2Height ) {
     square3=true;
     square3();
   }
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>Next3X && mouseX<Next3X+Next3Width && mouseY>Next3Y && mouseY<Next3Y+Next3Height ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>Next3X && mouseX<Next3X+Next3Width && mouseY>Next3Y && mouseY<Next3Y+Next3Height ) {
     square4=true;
     square4();
   }
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>Next4X && mouseX<Next4X+Next4Width && mouseY>Next4Y && mouseY<Next4Y+Next4Height ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>Next4X && mouseX<Next4X+Next4Width && mouseY>Next4Y && mouseY<Next4Y+Next4Height ) {
     square5=true;
     square5();
   }
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>Next5X && mouseX<Next5X+Next5Width && mouseY>Next5Y && mouseY<Next5Y+Next5Height ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>Next5X && mouseX<Next5X+Next5Width && mouseY>Next5Y && mouseY<Next5Y+Next5Height ) {
     square6=true;
     square6();
   }
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>Next6X && mouseX<Next6X+Next6Width && mouseY>Next6Y && mouseY<Next6Y+Next6Height ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>Next6X && mouseX<Next6X+Next6Width && mouseY>Next6Y && mouseY<Next6Y+Next6Height ) {
     square7=true;
     square7();
   }
   //
 
-  if ( OS_on==true && splashScreenStart==true && mouseX>Next7X && mouseX<Next7X+Next7Width && mouseY>Next7Y && mouseY<Next7Y+Next7Height ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>Next7X && mouseX<Next7X+Next7Width && mouseY>Next7Y && mouseY<Next7Y+Next7Height ) {
     square8=true;
     square8();
   }
 
   //
-  if ( OS_on==true && splashScreenStart==true && mouseX>DoneX && mouseX<DoneX+DoneWidth && mouseY>DoneY && mouseY<DoneY+DoneHeight ) {
+  if ( OS_on==true && splashScreenStart==true && endScreen==false && mouseX>DoneX && mouseX<DoneX+DoneWidth && mouseY>DoneY && mouseY<DoneY+DoneHeight ) {
     endScreen=true;
     restart=false;
     exit=false;

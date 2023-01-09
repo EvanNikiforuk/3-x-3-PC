@@ -1,4 +1,4 @@
-//Global Variables
+  //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
 Boolean OS_on=false, splashScreenStart=false, nightMode=false, square1=false, square2=false, square3=false, square4=false, square5=false, square6=false, square7=false, square8=false, endScreen=false;
 color red = #FF0000, resetDefaultInk = #000000, white=#FFFFFF;
@@ -67,6 +67,7 @@ void mousePressed() {
       square6=false;
       square7=false;
       square8=false;
+      endScreen=false;
       backgroundImage();
       mainGrid();
     }
@@ -128,6 +129,22 @@ void mousePressed() {
     square8=false;
     endScreen();
   }
+  //
+  if ( OS_on==true && splashScreenStart==true && endScreen==true && mouseX>exitButton2X && mouseX<exitButton2X+exitButton2Width && mouseY>exitButton2Y && mouseY<exitButton2Y+exitButton2Height ) exit();
+  //
+  if ( endScreen==true && mouseX>restartButton2X && mouseX<restartButton2X+restartButton2Width && mouseY>restartButton2Y && mouseY<restartButton2Y+restartButton2Height ) {
+      square1=false;
+      square2=false;
+      square3=false;
+      square4=false;
+      square5=false;
+      square6=false;
+      square7=false;
+      square8=false;
+      endScreen=false;
+      backgroundImage();
+      mainGrid();
+    }
 } //End keyPressed
 //
 //End Main Program

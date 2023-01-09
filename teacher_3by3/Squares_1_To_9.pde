@@ -170,7 +170,10 @@ void endScreen() {
   tint(255, 255);
   imageNightMode();
   image(image9, endScreenX, endScreenY, endScreenWidth, endScreenHeight);
+  fill(ES);
   rect(exitButton2X, exitButton2Y, exitButton2Width, exitButton2Height);
+  fill(ES2);
   rect(restartButton2X, restartButton2Y, restartButton2Width, restartButton2Height);
   endScreenText();
+  hoverOver();
 }//End endScreen

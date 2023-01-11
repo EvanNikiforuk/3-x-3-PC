@@ -6,8 +6,6 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
-Minim minim;
-AudioPlayer song1;
 int appWidth, appHeight, smallerDimension, largerDimension;
 Boolean OS_on=false, splashScreenStart=false, nightMode=false, square1=false, square2=false, square3=false, square4=false, square5=false, square6=false, square7=false, square8=false, endScreen=false;
 color red = #FF0000, resetDefaultInk = #000000, white=#FFFFFF;
@@ -27,10 +25,7 @@ void setup() {
   textSetup();
   imagesPopulation();
   //
-  //Music
-  minim = new Minim(this);
-  song1 = minim.loadFile("../MusicDownload/Drifting at 432 Hz - Unicorn Heads.mp3");
-  song1.loop();
+  musicSetup();
 } //End setup
 //
 void draw() {

@@ -58,6 +58,8 @@ void homeScreen() {
     endScreen();
   }
   //
+  musicDraw();
+  //
 }//End hoeScreen
 //
 void startSquare() {

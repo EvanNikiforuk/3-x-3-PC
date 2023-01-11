@@ -108,10 +108,10 @@ void population() {
   squareImage5X = appWidth * 2.7/4;
   squareImage5Y = appHeight *2.7/4;
   squareImage5Width = appWidth * 1.3/4;
-  squareImage5Height = appHeight * 1.4/4;
+  squareImage5Height = appHeight * 1.1/4;
   //
   Next5X = appWidth * 3.5/4;
-  Next5Y = appHeight * 3.75/4;
+  Next5Y = appHeight * 3.55/4;
   Next5Width = appWidth * 0.5/4;
   Next5Height = appHeight * 0.25/4;
   //
@@ -123,10 +123,10 @@ void population() {
   squareImage6X = appWidth * 1.3/4;
   squareImage6Y = appHeight *2.7/4;
   squareImage6Width = appWidth * 1.4/4;
-  squareImage6Height = appHeight * 1.4/4;
+  squareImage6Height = appHeight * 1.1/4;
   //
   Next6X = appWidth * 1.7/4;
-  Next6Y = appHeight * 3.75/4;
+  Next6Y = appHeight * 3.55/4;
   Next6Width = appWidth * 0.5/4;
   Next6Height = appHeight * 0.25/4;
   //
@@ -138,10 +138,10 @@ void population() {
   squareImage7X = appWidth * 0/4;
   squareImage7Y = appHeight *2.7/4;
   squareImage7Width = appWidth * 1.3/4;
-  squareImage7Height = appHeight * 1.4/4;
+  squareImage7Height = appHeight * 1.1/4;
   //
   Next7X = appWidth * 0/4;
-  Next7Y = appHeight * 3.75/4;
+  Next7Y = appHeight * 3.55/4;
   Next7Width = appWidth * 0.5/4;
   Next7Height = appHeight * 0.25/4;
   //
@@ -176,14 +176,39 @@ void population() {
   doneHeight = appHeight * 0.5/4;
   //
   exitButton2X = appWidth * 0;
-  exitButton2Y = appHeight * 3.5/4;
+  exitButton2Y = appHeight * 3.3/4;
   exitButton2Width = appWidth * 0.5/4;
   exitButton2Height = appHeight * 0.5/4;
   //
   restartButton2X = appWidth * 3.5/4;
-  restartButton2Y = appHeight * 3.5/4;
+  restartButton2Y = appHeight * 3.3/4;
   restartButton2Width = appWidth * 0.5/4;
   restartButton2Height = appHeight * 0.5/4;
+  //
+  musicX = appWidth * 0;
+  musicY = appHeight * 3.8/4;
+  musicWidth = appWidth * 4/4;
+  musicHeight = appHeight * 0.2/4;
+  //
+  backX = appWidth * 0;
+  backY = appHeight * 3.8/4;
+  backWidth = appWidth * 1/4;
+  backHeight = appHeight * 0.2/4;
+  //
+  pauseX = appWidth * 1/4;
+  pauseY = appHeight * 3.8/4;
+  pauseWidth = appWidth * 1/4;
+  pauseHeight = appHeight * 0.2/4;
+  //
+  muteX = appWidth * 2/4;
+  muteY = appHeight * 3.8/4;
+  muteWidth = appWidth * 1/4;
+  muteHeight = appHeight * 0.2/4;
+  //
+  forwardX = appWidth * 3/4;
+  forwardY = appHeight * 3.8/4;
+  forwardWidth = appWidth * 1/4;
+  forwardHeight = appHeight * 0.2/4;
 }//End population
 //
 //End Population Subprogram

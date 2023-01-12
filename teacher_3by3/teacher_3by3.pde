@@ -67,6 +67,7 @@ void draw() {
   } //End keyPressed
   //
   void mousePressed() {
+    musicMousePressed();
     //OS Level Mouse Click 
     if (OS_on==false) OS_on=true;//End OS Level Mouse Click
     //
